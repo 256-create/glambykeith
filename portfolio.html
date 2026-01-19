@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Glam by Keith - Luxury Makeup Artistry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-container">
+            <button class="hamburger-menu" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <a href="index.html" class="logo">Glam by <span>Keith</span></a>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== PORTFOLIO HERO ===== -->
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+        <div class="container hero-content">
+            <h1>The Gallery of Dreams</h1>
+            <p>Each face tells a story. Each brushstroke carries intention.</p>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO GALLERY ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Transformations That Speak Volumes</h2>
+                <p>From intimate Kampala weddings to luxury events across East Africa</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="softglam">Soft Glam</button>
+                <button class="filter-btn" data-filter="transformations">Transformations</button>
+                <button class="filter-btn" data-filter="editorial">Editorial</button>
+            </div>
+            
+            <div class="portfolio-page-grid">
+                <!-- Bridal Images -->
+                <div class="portfolio-page-item" data-category="bridal">
+                    <img src="https://images.unsplash.com/photo-1512476446317-8e8725b2c5e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Traditional Ugandan bride">
+                    <div class="portfolio-category">Bridal Collection</div>
+                </div>
+                
+                <div class="portfolio-page-item" data-category="bridal">
+                    <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern bride with veil">
+                    <div class="portfolio-category">Bridal Collection</div>
+                </div>
+                
+                <!-- Soft Glam Images -->
+                <div class="portfolio-page-item" data-category="softglam">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Soft glam makeup">
+                    <div class="portfolio-category">Soft Glam Signature</div>
+                </div>
+                
+                <div class="portfolio-page-item" data-category="softglam">
+                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Natural glam look">
+                    <div class="portfolio-category">Soft Glam Signature</div>
+                </div>
+                
+                <!-- Transformations -->
+                <div class="portfolio-page-item" data-category="transformations">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Makeup transformation">
+                    <div class="portfolio-category">Transformations</div>
+                </div>
+                
+                <!-- Editorial -->
+                <div class="portfolio-page-item" data-category="editorial">
+                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Creative editorial makeup">
+                    <div class="portfolio-category">Editorial & Creative</div>
+                </div>
+                
+                <!-- More Images -->
+                <div class="portfolio-page-item" data-category="bridal">
+                    <img src="https://images.unsplash.com/photo-1556228574445-855e042a6f7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bridal makeup detail">
+                    <div class="portfolio-category">Bridal Collection</div>
+                </div>
+                
+                <div class="portfolio-page-item" data-category="softglam">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Evening glam">
+                    <div class="portfolio-category">Soft Glam Signature</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-reel-section">
+            <div class="container">
+                <h3>Beauty in Motion</h3>
+                <p>Watch transformations unfold on TikTok & Instagram</p>
+                <div class="social-links">
+                    <a href="https://tiktok.com/@its_keith256" target="_blank" class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://instagram.com/glam_bykeith" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+    <section class="section-padding" style="background-color: var(--chocolate); color: white;">
+        <div class="container text-center">
+            <h2 style="color: white;">Ready to Create Your Dream Look?</h2>
+            <p style="margin-bottom: 40px; opacity: 0.9;">Let's bring your vision to life with artistry that celebrates your unique beauty.</p>
+            <a href="booking.html" class="btn">Book Your Session</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Glam by <span class="highlight">Keith</span></div>
+                    <p>Uganda's premiere luxury makeup artistry specializing in soft glam, bridal transformations, and beauty experiences that celebrate African elegance.</p>
+                    <div class="social-links" style="justify-content: flex-start; margin-top: 20px;">
+                        <a href="https://wa.me/256782447387" target="_blank" class="social-icon" style="background-color: rgba(255,255,255,0.1);">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/glam_bykeith" target="_blank" class="social-icon" style="background-color: rgba(255,255,255,0.1);">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@its_keith256" target="_blank" class="social-icon" style="background-color: rgba(255,255,255,0.1);">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Bridal Makeup</a></li>
+                        <li><a href="services.html">Event Glam</a></li>
+                        <li><a href="services.html">Soft Glam</a></li>
+                        <li><a href="services.html">Transformations</a></li>
+                        <li><a href="services.html">Masterclasses</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Yosef Mall, Kansanga</p>
+                    <p><i class="fas fa-phone-alt" style="margin-right: 10px;"></i> +256 782 447 387</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> gitzmakeups@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Glam by Keith. All rights reserved. | Proudly Ugandan Beauty Artistry</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">Luxury Beauty Artistry Since 2018</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Glam by Keith - Luxury Makeup Artistry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-container">
+            <button class="hamburger-menu" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <a href="index.html" class="logo">Glam by <span>Keith</span></a>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="booking.html" class="active">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== BOOKING HERO ===== -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Your Transformation Awaits</h1>
+            <p>Begin your journey to radiant confidence</p>
+        </div>
+    </section>
+
+    <!-- ===== BOOKING FORM ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>I'd love to hear about your vision and create something beautiful together.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Studio Address</h4>
+                            <p>Yosef Mall, Kansanga<br>Kampala, Uganda</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>gitzmakeups@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Phone & WhatsApp</h4>
+                            <p>+256 782 447 387</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Studio Hours</h4>
+                            <p>By Appointment Only<br>Monday - Saturday: 9AM - 6PM<br>Sunday: Emergency Bridal Only</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://wa.me/256782447387" target="_blank" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/glam_bykeith" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@its_keith256" target="_blank" class="social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Booking Inquiry</h3>
+                    <p>Due to high demand, please allow 24-48 hours for response. Bridal inquiries for peak season (June-Dec) are advised to book 6-9 months in advance.</p>
+                    
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="eventType">Event Type *</label>
+                            <select id="eventType" class="form-control" required>
+                                <option value="">Select an option</option>
+                                <option value="wedding">Wedding / Bridal</option>
+                                <option value="birthday">Birthday / Celebration</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="photoshoot">Photoshoot / Editorial</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Event Date *</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Service Interested In *</label>
+                            <div>
+                                <label style="display: block; margin-bottom: 5px;">
+                                    <input type="radio" name="service" value="platinum" required> Platinum Bridal
+                                </label>
+                                <label style="display: block; margin-bottom: 5px;">
+                                    <input type="radio" name="service" value="signature"> Signature Bridal
+                                </label>
+                                <label style="display: block; margin-bottom: 5px;">
+                                    <input type="radio" name="service" value="event"> Event Glam
+                                </label>
+                                <label style="display: block; margin-bottom: 5px;">
+                                    <input type="radio" name="service" value="softglam"> Soft Glam Session
+                                </label>
+                                <label style="display: block; margin-bottom: 5px;">
+                                    <input type="radio" name="service" value="notsure"> Not Sure / Consultation First
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <select id="location" class="form-control">
+                                <option value="">Select location</option>
+                                <option value="studio">Studio (Yosef Mall, Kansanga)</option>
+                                <option value="travel-kampala">Travel within Kampala</option>
+                                <option value="travel-uganda">Travel within Uganda</option>
+                                <option value="travel-east-africa">Travel within East Africa</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Vision / Additional Details</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Tell me about your event, style preferences, inspiration photos, etc."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="how">How did you hear about Glam by Keith?</label>
+                            <select id="how" class="form-control">
+                                <option value="">Select an option</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="tiktok">TikTok</option>
+                                <option value="referral">Friend/Family Referral</option>
+                                <option value="search">Google Search</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <div class="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How far in advance should I book?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        For bridal services, we recommend booking 6-9 months in advance, especially for peak wedding season (June-December). For events, 3-4 weeks is usually sufficient, but earlier is always better to secure your date.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you travel for weddings and events?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! I am available for travel across Uganda and East Africa. Travel fees are calculated based on location and accommodation requirements. Destination wedding inquiries are welcomed and handled with special attention.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What products do you use?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        I use only luxury, professional-grade brands suitable for all skin types and specifically selected for longevity in Uganda's climate. All products are sanitized between clients, and I prioritize high-quality formulas that photograph beautifully.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you offer trials for bridal makeup?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, all bridal packages include a trial session. This is an essential step to perfect your look, test longevity, and ensure we're both aligned on the vision for your special day.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What is your cancellation policy?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        A 50% deposit is required to secure your date. Full refund is available for cancellations made 90 days prior to the event. For cancellations within 90 days, the deposit may be applied to a future date or service, subject to availability.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">Glam by <span class="highlight">Keith</span></div>
+                    <p>Uganda's premiere luxury makeup artistry specializing in soft glam, bridal transformations, and beauty experiences that celebrate African elegance.</p>
+                    <div class="social-links" style="justify-content: flex-start; margin-top: 20px;">
+                        <a href="https://wa.me/256782447387" target="_blank" class="social-icon" style="background-color: rgba(255,255,255,0.1);">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/glam_bykeith" target="_blank" class="social-icon" style="background-color: rgba(255,255,255,0.1);">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://tiktok.com/@its_keith256" target="_blank" class="social-icon" style="background-color: rgba(255,255,255,0.1);">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Bridal Makeup</a></li>
+                        <li><a href="services.html">Event Glam</a></li>
+                        <li><a href="services.html">Soft Glam</a></li>
+                        <li><a href="services.html">Transformations</a></li>
+                        <li><a href="services.html">Masterclasses</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Yosef Mall, Kansanga</p>
+                    <p><i class="fas fa-phone-alt" style="margin-right: 10px;"></i> +256 782 447 387</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> gitzmakeups@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Glam by Keith. All rights reserved. | Proudly Ugandan Beauty Artistry</p>
+                <p style="margin-top: 10px; font-size: 0.8rem;">Luxury Beauty Artistry Since 2018</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
